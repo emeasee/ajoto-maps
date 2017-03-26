@@ -151,7 +151,7 @@ gulp.task('serve:test', ['scripts'], () => {
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+    .pipe($.ghPages());
 });
 
 // inject bower components
