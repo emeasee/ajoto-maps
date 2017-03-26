@@ -8,6 +8,7 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -15,13 +16,10 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
     <!-- endbuild -->
   </head>
   <body>
@@ -29,6 +27,8 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div id='map' class='map'></div>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
