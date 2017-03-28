@@ -29,7 +29,11 @@ function createPopUp(currentFeature) {
 // Add an event listener for when a user clicks on the map
 map.on('click', function(e) {
   // Query all the rendered points in the view
-  var features = map.queryRenderedFeatures(e.point, { layers: ['manufacturers-commercial','manufacturers-sources','manufacturers-industrial','manufacturers-warehouses'] });
+  if(stockists){
+    var features = map.queryRenderedFeatures(e.point, { layers: ['stockists'] });
+  } else {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['manufacturers-commercial','manufacturers-sources','manufacturers-industrial','manufacturers-warehouses'] });
+  }
   if (features.length) {
     var clickedPoint = features[0];
     // 1. Fly to the point

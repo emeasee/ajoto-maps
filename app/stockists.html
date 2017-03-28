@@ -27,7 +27,7 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id='map2' class='map'></div>
+    <div id='map' class='map'></div>
     
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
 
@@ -37,6 +37,17 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiYWpvdG8iLCJhIjoiSE1pRmh6cyJ9.39TMcTilwTCVTZ5ISrBvhg';
+      var stockists = true;
+      var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/ajoto/cj0t913xq00gr2rnygc2m94l4',
+          center: [9.664322, 47.266435],
+          zoom: 3
+      });
+    </script>
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
