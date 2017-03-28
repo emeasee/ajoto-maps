@@ -42,3 +42,5 @@ map.on('click', function(e) {
     createPopUp(clickedPoint);
   }
 });
+
+map.addControl(new mapboxgl.NavigationControl());
