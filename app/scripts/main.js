@@ -44,3 +44,4 @@ map.on('click', function(e) {
 });
 
 map.addControl(new mapboxgl.NavigationControl());
+map.scrollZoom.disable();
