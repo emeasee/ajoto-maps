@@ -52,7 +52,7 @@ map.on('click', function(e) {
       createPopUpStockists(clickedPoint);
     }
   } else {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['manufacturers-commercial','manufacturers-sources','manufacturers-industrial','manufacturers-warehouses'] });
+    var features = map.queryRenderedFeatures(e.point, { layers: ['manufacturers-industrial'] });
     if (features.length) {
       var clickedPoint = features[0];
       // 1. Fly to the point
